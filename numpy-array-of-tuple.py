@@ -1,8 +1,10 @@
 # Numpy converts a list of tuples *not* into an array of tuples, but into a 2D
 # array instead.
+import numpy as np  # 1.11.1
+
 list_of_tuples = [(1, 2), (3, 4)]
-import numpy as np
 print('list of tuples:', list_of_tuples, 'type:', type(list_of_tuples))
+
 A = np.array(list_of_tuples)
 print('numpy array of tuples:', A, 'type:', type(A))
 
